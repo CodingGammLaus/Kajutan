@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
     <head>
         <meta charset="UTF-8"/>
         <meta charset="description" content="Hemsida för Kajutan"/>
@@ -9,39 +9,49 @@
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="printstyle.css" media="print">
         <link rel="shortcut icon" type="image/x-icon" href="https://usercontent.one/wp/www.kajjan.se/wp-content/uploads/2020/09/cropped-loggo-1-192x192.png">
+
+        <style> 
+
+            .audio-container {
+                margin-top: 2%;
+                margin-right: auto;
+                margin-left: auto;
+                display: block;
+                text-align: center;
+            }
+        </style>
     </head>   
     <body>
         <nav>
             <a href="index.html">
-                <img class="logo" src="bilder/Kajutan_logo.png" alt="Kajutan Logo"/>
+                <img class="logo" src="bilder/ach.png" alt="Kajutan Logo" style="margin-left: 10px;"/>
             </a>
             <!--Menu-->
             <ul>
+                <li><a class="active" href="falken.html">Secret</a></li>
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="meny.html">Meny</a></li>
-                <li><a class="active" href="bokabord.html">Boka bord</a></li>
+                <li><a href="bokabord.html">Boka bord</a></li>
                 <li><a href="om.html">Om oss</a></li>
                 <li><a href="kontakt.html">Kontakta oss</a></li>
             </ul>
         </nav>
 
-        <h1>Boka bord</h1>
-        <hr/>
+        <h1>Achievement unlocked!</h1>
+        <hr />
 
-        <div class="bookingfrom">
-            <form style="margin: auto;">
-                <p class="menucategory">Boka bord på Kajutan</p>
-                <input type="text" placeholder="Namn">
-                <div style="display: flex;">
-                    <input type="tel" placeholder="Telefonnummer" style="margin-right: 2%;">
-                    <input type="number" placeholder="Antal personer" style="width: 30%;">
-                </div>
-                <input type="datetime-local" style="resize: none;">
-                <textarea name="comment" placeholder="Meddelande restaurangen något i förväg"></textarea>
-                <input id="booktablebutton" type="submit" value="Boka" onclick="alert('Bokat! (Responsivitet läggs till i JavaScript uppdateringen)')">
-            </form>
+        <p class="menucategory" style="margin-top: 3%;">Video</p>
+        <iframe width="50%" height="400px" style="margin-right: auto; margin-left: auto; display: block;"
+            src="https://www.youtube.com/embed/mvO0uZlD24U?si=-S8vz3RET1kNvkqq">
+        </iframe>
+
+        <div class="audio-container">
+            <p>Music</p>
+            <audio controls>
+                <source src="bilder/fiskarna.mp3" type="audio/mpeg">
+                <p>If you are reading this, it is because your browser does not support the audio element.</p>
+            </audio>
         </div>
-
     </body>
 
     <footer>

@@ -32,7 +32,7 @@ h1 {
   text-align: center;
   font-size: 42px;
   font-family: ovo;
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 hr {
@@ -41,10 +41,102 @@ hr {
 }
 
 /*Body text*/
-p {
+p, td {
   color: black;
   font-size: 20px;
   font-family: raleway;
+}
+
+td {
+  padding-bottom: 18px;
+  text-align: start;
+}
+
+.boldparagraphtext {
+  font-family: ralewaybold;
+}
+
+
+/*---------------------------------------Footer------------------------------------------------*/
+
+footer {
+  background-color: #3B3939;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 190px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fot {
+  display: flex;
+  margin-left: 10px;
+}
+
+.firsttextfot {
+  font-size: 18px;
+  color: white;
+  width: 40%;
+}
+
+.textfot {
+  margin-left: 15%;
+  width: 25%;
+}
+
+.footertext {
+  color: white; 
+  font-family: raleway;
+  font-size: 18px;
+  margin-top: 5px; 
+  margin-bottom: 5px;
+}
+
+.footertextheader {
+  font-family: ralewaybold;
+  color: white; 
+  font-size: 18px;
+}
+
+.footerlinks {
+  text-decoration: none; 
+  font-family: raleway;
+  color: white; 
+  font-size: 18px;
+}
+
+#footermaplink {
+  color: lightblue;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.instagramlogo {
+  margin-top: 5px;
+  width: 30px; 
+  margin-right: 10px;
+}
+
+.facebooklogo {
+  margin-top: 5px;
+  width: 30px;
+}
+
+.lunchday {
+
+  font-family: ralewaybold; 
+  padding-right: 80px;
+}
+
+#reserve_table_button {
+
+  width: 25%;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /*p tag*/
@@ -53,12 +145,27 @@ p {
   text-align: center;
 }
 
+.foodcat {
+
+  margin: auto;
+  width: 35%;
+}
+
 .logo {
   width: 200px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+
+  width: 205px;
+  transition: 0.3s;
 }
 
 .foodpic {
-  width: 30%;
+  width: 40%;
+  border: 2px solid black;
 }
 
 .slideshow {
@@ -71,9 +178,10 @@ p {
 /*-----------------------------Menu----------------------------------------*/
 nav {
   background-color: #3B3939;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
+  height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -99,9 +207,18 @@ li a {
   text-decoration: none;
 }
 
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #d8d8d8;
+}
+
 .active {
   color: #77C6FF;
 }
+
 /*-------------------------------------------------------------------------*/
 
 #omoss {
@@ -112,58 +229,49 @@ li a {
   width: 60%;
 }
 
-
-footer {
-  background-color: #3B3939;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 190px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.fot {
-  display: flex;
-  margin-left: 10px;
-}
-
-.firsttextfot {
-  font-size: 18px;
-  color: white;
-}
-
-.textfot {
-  margin-left: 25%;
-}
-
-
-
-/**/
 .contact {
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactfrom {
   display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+  padding: 10px;
+  width: 40%;
 }
 
 .info {
   display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+  padding: 10px;
   text-align: left;
+}
+
+
+.bookingfrom {
+  padding: 10px;
+  width: 70%;
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
+#booktablebutton {
+
+  width: 50%; 
+  height: 50px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
 }
 
 
 
 /*-----------------------------Form-------------------------------*/
 form {
-  width: 60%;
+  width: 70%;
   margin-left: auto; 
   margin-right: 0;
 }
@@ -179,10 +287,10 @@ input{
   resize: vertical;
 }
 
-input[type=submit] {
+input[type=submit], #reserve_table_button {
   background-color: #AFA08D;
   color: white;
-  padding: 4px;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -190,7 +298,7 @@ input[type=submit] {
   font-size: 24px;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover, #reserve_table_button:hover{
   background-color: #998d7c;
 }
 
@@ -206,3 +314,75 @@ textarea {
   resize: vertical;
 }
 /*------------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+
+  nav {
+    background-color: #3B3939;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    margin-right: 40px;
+  }
+  
+  u li {
+    margin-left: 20px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  a {
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #d8d8d8;
+  }
+  
+  .active {
+    color: #77C6FF;
+  }
+
+
+  .contact {
+
+    width: 100%;
+  }
+  
+  .contactfrom {
+
+    width: 100%;
+  }
+  
+  .info {
+
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+

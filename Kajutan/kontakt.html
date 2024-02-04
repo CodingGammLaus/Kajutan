@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <title>Kajutan</title> 
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8"/>
+        <meta charset="description" content="Hemsida för Kajutan"/>
+        <meta charset="keywords" content="Kajutan, kajjan, Holmsund, pizza, kebab, hamburgare, restaurang"/>
+        <meta charset="author" content="Simon Lindgren"/>
+        <title>Kajutan.se – Restaurang Kajutan</title> 
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="printstyle.css" media="print">
+        <link rel="shortcut icon" type="image/x-icon" href="https://usercontent.one/wp/www.kajjan.se/wp-content/uploads/2020/09/cropped-loggo-1-192x192.png">
     </head>   
     <body>
         <nav>
@@ -13,6 +19,7 @@
             <ul>
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="meny.html">Meny</a></li>
+                <li><a href="bokabord.html">Boka bord</a></li>
                 <li><a href="om.html">Om oss</a></li>
                 <li><a class="active" href="kontakt.html">Kontakta oss</a></li>
             </ul>
@@ -23,20 +30,28 @@
 
         <div class="contact">
             <div class="info">
-                <p style="font-family: ralewaybold;">Address</p>
-                <p>Gamla Storgatan 47</p></br>
-                <p style="font-family: ralewaybold;">Telefonnummer</p>
-                <p>090-24040</p></br>
-                <p style="font-family: ralewaybold;">Epost</p>
-                <p>kajjan@gmail.com</p></br>
-                <p style="font-family: ralewaybold;">Följ oss</p>
-                <div>
-                    <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
-                        <img src="bilder/instagram.png" style="width: 30px; margin-right: 10px;"/>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100054215632458" target="_blank">
-                        <img src="bilder/facebook.png" style="width: 30px;"/>
-                    </a>
+                <div class="box">
+                    <p class="boldparagraphtext">Address</p>
+                    <p>Gamla Storgatan 47</p>
+                </div>
+                <div class="box">
+                    <p class="boldparagraphtext">Telefonnummer</p>
+                    <p>090-24040</p>
+                </div>
+                <div class="box">
+                    <p class="boldparagraphtext">Epost</p>
+                    <p>kajjan@gmail.com</p>
+                </div>
+                <div class="box">
+                    <p class="boldparagraphtext">Följ oss</p>
+                    <div>
+                        <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
+                            <img src="bilder/instagram.png" class="instagramlogo"/>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100054215632458" target="_blank">
+                            <img src="bilder/facebook.png" class="facebooklogo"/>
+                        </a>
+                    </div> 
                 </div>
             </div>
             <div class="contactfrom">
@@ -45,43 +60,57 @@
                     <input type="text" placeholder="Namn">
                     <input type="email" placeholder="Email">
                     <textarea name="comment" placeholder="Meddelande"></textarea>
-                    <input type="submit" value="Skicka">
+                    <input type="submit" value="Skicka" onclick="alert('Skickat! (Responsivitet läggs till i JavaScript uppdateringen)')">
                 </form>
             </div>
         </div>
+
+        <!--Java update
+        <div class="scrollupdiv">
+            <img src="bilder/scrollup.png" class="scrollupimg"/>
+        </div>-->
 
     </body>
 
     <footer>
         <div class="fot">
             <div class="firsttextfot">
-                <p style="font-family: ralewaybold; color: white; font-size: 18px;">Kontakta oss</p>
-                <p style="color: white; font-size: 18px;">kajjan@gmail.com <br/> Tel: 090-24040 <br/> Gamla Storgatan 47 (tryck för karta)</p>
+                <p class="footertextheader">Kontakta oss</p>
+                <p class="footertext">kajjan@gmail.com</p>
+                <p class="footertext">Tel: 090-24040</p>
+                <p class="footertext">Gamla Storgatan 47 
+                    <a id="footermaplink" href="https://www.google.com/maps/place/Kajutan/@63.7094471,20.3585933,17z/data=!3m1!4b1!4m6!3m5!1s0x467c57093ab26d6d:0x63bd2ba299ebe24d!8m2!3d63.7094447!4d20.3611682!16s%2Fg%2F1tcw6thf?entry=ttu" target="_blank">
+                        (tryck för karta)
+                    </a>
+                </p>
                 <div>
                     <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
-                        <img src="bilder/instagram.png" style="width: 30px; margin-right: 10px;"/>
+                        <img src="bilder/instagram.png" class="instagramlogo"/>
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=100054215632458" target="_blank">
-                        <img src="bilder/facebook.png" style="width: 30px;"/>
+                        <img src="bilder/facebook.png" class="facebooklogo"/>
                     </a>
                 </div>
             </div>
 
             <div class="textfot">
-                <p style="font-family: ralewaybold; color: white; font-size: 18px;">Hitta snabbt </p>
+                <p class="footertextheader">Hitta snabbt </p>
 
                 <p> 
-                    <a href="index.html" style="text-decoration: none; color: white; font-size: 18px;">Hem</a></br> 
-                    <a href="meny.html" style="text-decoration: none; color: white; font-size: 18px;">Meny</a></br>
-                    <a href="bokabord.html" style="text-decoration: none; color: white; font-size: 18px;">Boka bord</a></br>
-                    <a href="om.html" style="text-decoration: none; color: white; font-size: 18px;">Om oss</a></br>
-                    <a href="kontakt.html" style="text-decoration: none; color: white; font-size: 18px;">Kontakta oss</a>
+                    <a href="index.html" class="footerlinks">Hem</a></br> 
+                    <a href="meny.html" class="footerlinks">Meny</a></br>
+                    <a href="bokabord.html" class="footerlinks">Boka bord</a></br>
+                    <a href="om.html" class="footerlinks">Om oss</a></br>
+                    <a href="kontakt.html" class="footerlinks">Kontakta oss</a>
                 </p>  
             </div>
             
             <div class="textfot" >
-                <p style="font-family: ralewaybold; color: white; font-size: 18px;">Öppettider</p>
-                <p style="color: white; font-size: 18px;">mån-fre 00:00 - 00:00 <br/> lör 00:00 - 00:00  <br/> sön 00:00 - 00:00 </p> 
+                <p class="footertextheader">Öppettider</p>
+                <p class="footertext">Mån-Tors 10:00 - 20:00</p>
+                <p class="footertext">Fre 10:00 - 23:00</p>
+                <p class="footertext">Lör 12:00 - 23:00</p>
+                <p class="footertext">Sön 12:00 - 20:00</p>
             </div>
     </footer>
 </html>
