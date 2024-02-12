@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <meta charset="UTF-8"/>
-        <meta charset="description" content="Hemsida för Kajutan"/>
-        <meta charset="keywords" content="Kajutan, kajjan, Holmsund, pizza, kebab, hamburgare, restaurang"/>
-        <meta charset="author" content="Simon Lindgren"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hemsida för Kajutan">
+        <meta name="keywords" content="Kajutan, kajjan, Holmsund, pizza, kebab, hamburgare, restaurang">
+        <meta name="author" content="Simon Lindgren">
         <title>Kajutan.se – Restaurang Kajutan</title> 
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="printstyle.css" media="print">
         <link rel="shortcut icon" type="image/x-icon" href="https://usercontent.one/wp/www.kajjan.se/wp-content/uploads/2020/09/cropped-loggo-1-192x192.png">
     </head>    
     <body>
+        <!--MenuBar-->
         <nav>
             <a href="index.html">
-                <img class="logo" src="bilder/Kajutan_logo.png" alt="Kajutan Logo"/>
+                <img class="logo" src="bilder/Kajutan_logo.png" alt="Kajutan Logo">
             </a>
             <!--Menu-->
             <ul>
@@ -25,11 +26,13 @@
             </ul>
         </nav>
 
+        <!--Header-->
         <h1>Om oss</h1>
-        <hr />
+        <hr>
 
+        <!--Body Content-->
         <div id="omoss">
-            <p>
+            <p class="abouttext">
                 Restaurang Kajutan finner ni i Holmsunds “Old Town”. 
                 Under mitten av 1900-talet vandrade tusentals personer 
                 årligen efter gatan där nu Kajutan är belägen. Från Djupviks 
@@ -37,7 +40,10 @@
                 “Gamla Storgatan” som den numera heter. Denna gata var en gång 
                 i tiden som “stråget” i Köpenhamn. Ett antal cafer, biografer, 
                 kiosker, butiker samt matställen kunde man finna efter gatan. 
-                Där vi idag har restaurangen så minns äldre genuina skärgårdsbor 
+                Där vi idag har restaurangen så minns äldre  
+            </p>
+            <p class="abouttext">
+                genuina skärgårdsbor 
                 huset där man en gång i tiden köpte sina fina kläder i orten. 
                 Från “Nordbrandts” med start i detta hus på 30-talet, “Wincents 
                 Herrekipering” från 50-talet och därefter några år under namnet 
@@ -47,53 +53,50 @@
                 i ett historiskt hus efter en gata med anor som få idag kan föreställa sig.
             </p>
         </div>
-        <img src="bilder/kajutan.jpg" style="width: 40%; margin-left: auto; margin-right: auto; display: block; margin-top: 3%;"/>
+        <img src="bilder/Kajutan_logo.png" alt="Kajutan logo" id="aboutpic">
 
-        <!--Java update
-        <div class="scrollupdiv">
-            <img src="bilder/scrollup.png" class="scrollupimg"/>
-        </div>-->
-    </body>
+        <!--Footer-->
+        <footer>
+            <div class="fot">
+                <div class="firsttextfot">
+                    <p class="footertextheader">Kontakta oss</p>
+                    <p class="footertext">kajjan@gmail.com</p>
+                    <p class="footertext">Tel: 090-24040</p>
+                    <p class="footertext">Gamla Storgatan 47 
+                        <a id="footermaplink" href="https://www.google.com/maps/place/Kajutan/@63.7094471,20.3585933,17z/data=!3m1!4b1!4m6!3m5!1s0x467c57093ab26d6d:0x63bd2ba299ebe24d!8m2!3d63.7094447!4d20.3611682!16s%2Fg%2F1tcw6thf?entry=ttu" target="_blank">
+                            (tryck för karta)
+                        </a>
+                    </p>
+                    <div>
+                        <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
+                            <img src="bilder/instagram.png" alt="instagram logo" class="instagramlogo">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100054215632458" target="_blank">
+                            <img src="bilder/facebook.png" alt="facebook logo" class="facebooklogo">
+                        </a>
+                    </div>
+                </div>
 
-    <footer>
-        <div class="fot">
-            <div class="firsttextfot">
-                <p class="footertextheader">Kontakta oss</p>
-                <p class="footertext">kajjan@gmail.com</p>
-                <p class="footertext">Tel: 090-24040</p>
-                <p class="footertext">Gamla Storgatan 47 
-                    <a id="footermaplink" href="https://www.google.com/maps/place/Kajutan/@63.7094471,20.3585933,17z/data=!3m1!4b1!4m6!3m5!1s0x467c57093ab26d6d:0x63bd2ba299ebe24d!8m2!3d63.7094447!4d20.3611682!16s%2Fg%2F1tcw6thf?entry=ttu" target="_blank">
-                        (tryck för karta)
-                    </a>
-                </p>
-                <div>
-                    <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
-                        <img src="bilder/instagram.png" class="instagramlogo"/>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100054215632458" target="_blank">
-                        <img src="bilder/facebook.png" class="facebooklogo"/>
-                    </a>
+                <div class="textfot">
+                    <p class="footertextheader">Hitta snabbt </p>
+
+                    <p> 
+                        <a href="index.html" class="footerlinks">Hem</a><br> 
+                        <a href="meny.html" class="footerlinks">Meny</a><br>
+                        <a href="bokabord.html" class="footerlinks">Boka bord</a><br>
+                        <a href="om.html" class="footerlinks">Om oss</a><br>
+                        <a href="kontakt.html" class="footerlinks">Kontakta oss</a>
+                    </p>  
+                </div>
+                
+                <div class="textfot" >
+                    <p class="footertextheader">Öppettider</p>
+                    <p class="footertext">Mån-Tors 10:00 - 20:00</p>
+                    <p class="footertext">Fre 10:00 - 23:00</p>
+                    <p class="footertext">Lör 12:00 - 23:00</p>
+                    <p class="footertext">Sön 12:00 - 20:00</p>
                 </div>
             </div>
-
-            <div class="textfot">
-                <p class="footertextheader">Hitta snabbt </p>
-
-                <p> 
-                    <a href="index.html" class="footerlinks">Hem</a></br> 
-                    <a href="meny.html" class="footerlinks">Meny</a></br>
-                    <a href="bokabord.html" class="footerlinks">Boka bord</a></br>
-                    <a href="om.html" class="footerlinks">Om oss</a></br>
-                    <a href="kontakt.html" class="footerlinks">Kontakta oss</a>
-                </p>  
-            </div>
-            
-            <div class="textfot" >
-                <p class="footertextheader">Öppettider</p>
-                <p class="footertext">Mån-Tors 10:00 - 20:00</p>
-                <p class="footertext">Fre 10:00 - 23:00</p>
-                <p class="footertext">Lör 12:00 - 23:00</p>
-                <p class="footertext">Sön 12:00 - 20:00</p>
-            </div>
-    </footer>
+        </footer>
+    </body>
 </html>

@@ -7,12 +7,10 @@
     }
 
     nav {
-
       display: none;
     }
 
     footer {
-
       display: none;
     }
 
@@ -22,9 +20,16 @@
       font-family: 'Times New Roman', Times, serif;
     }
 
-    #reservetable {
-
-      display: none;
+    a {
+      font-family: 'Times New Roman', Times, serif;
     }
-  
+
+    
+    h1 {
+      color: black;
+      text-align: center;
+      font-size: 42px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 50px;
+    }
   }

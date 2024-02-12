@@ -26,7 +26,7 @@ body {
   padding-bottom: 200px;
 }
 
-/*Header*/
+/*Header 1*/
 h1 {
   color: black;
   text-align: center;
@@ -35,9 +35,25 @@ h1 {
   margin-top: 50px;
 }
 
+/*Header 2*/
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: ovo;
+}
+
+/*Header 3*/
+h3 {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-family: ovo;
+}
+
 hr {
   border-bottom: 2px solid black;
-  width: 25%;
+  width: 15%;
 }
 
 /*Body text*/
@@ -52,8 +68,15 @@ td {
   text-align: start;
 }
 
-.boldparagraphtext {
-  font-family: ralewaybold;
+table {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+audio {
+  background-color: rgba(0, 0, 0, 0.3); 
+  padding: 2px; 
+  border-radius: 50px;
 }
 
 
@@ -112,68 +135,6 @@ footer {
 
 /*---------------------------------------------------------------------------------------------*/
 
-.instagramlogo {
-  margin-top: 5px;
-  width: 30px; 
-  margin-right: 10px;
-}
-
-.facebooklogo {
-  margin-top: 5px;
-  width: 30px;
-}
-
-.lunchday {
-
-  font-family: ralewaybold; 
-  padding-right: 80px;
-}
-
-#reserve_table_button {
-
-  width: 25%;
-  height: 50px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/*p tag*/
-.menucategory {
-
-  text-align: center;
-}
-
-.foodcat {
-
-  margin: auto;
-  width: 35%;
-}
-
-.logo {
-  width: 200px;
-  margin-left: 10px;
-  transition: 0.3s;
-}
-
-.logo:hover {
-
-  width: 205px;
-  transition: 0.3s;
-}
-
-.foodpic {
-  width: 40%;
-  border: 2px solid black;
-}
-
-.slideshow {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /*-----------------------------Menu----------------------------------------*/
 nav {
@@ -209,6 +170,7 @@ li a {
 
 a {
   transition: 0.3s;
+  font-family: raleway;
 }
 
 a:hover {
@@ -220,52 +182,6 @@ a:hover {
 }
 
 /*-------------------------------------------------------------------------*/
-
-#omoss {
-
-  margin: auto;
-  align-content: center;
-  text-align: center;
-  width: 60%;
-}
-
-.contact {
-
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contactfrom {
-  display: inline-block;
-  padding: 10px;
-  width: 40%;
-}
-
-.info {
-  display: inline-block;
-  padding: 10px;
-  text-align: left;
-}
-
-
-.bookingfrom {
-  padding: 10px;
-  width: 70%;
-  margin-left: auto; 
-  margin-right: auto; 
-  display: block;
-}
-
-#booktablebutton {
-
-  width: 50%; 
-  height: 50px; 
-  margin-left: auto; 
-  margin-right: auto; 
-  display: block;
-}
 
 
 
@@ -316,73 +232,189 @@ textarea {
 /*------------------------------------------------------------------*/
 
 
+/*-------------------------Id's and Classes-----------------------------------------*/
 
-@media only screen and (max-width: 1000px) {
-  body {
-    background-color: lightblue;
-  }
-
-  nav {
-    background-color: #3B3939;
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin-left: auto;
-    display: flex;
-    margin-right: 40px;
-  }
-  
-  u li {
-    margin-left: 20px;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  a {
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    color: #d8d8d8;
-  }
-  
-  .active {
-    color: #77C6FF;
-  }
-
-
-  .contact {
-
-    width: 100%;
-  }
-  
-  .contactfrom {
-
-    width: 100%;
-  }
-  
-  .info {
-
-    width: 100%;
-    text-align: left;
-  }
+.audio-container {
+  margin-top: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
 }
 
+.instagramlogo {
+  margin-top: 5px;
+  width: 30px; 
+  margin-right: 10px;
+}
 
+.boldparagraphtext {
+  font-family: ralewaybold;
+}
 
+.facebooklogo {
+  margin-top: 5px;
+  width: 30px;
+}
 
+.lunchday {
+  font-family: ralewaybold; 
+  padding-right: 80px;
+}
+
+#reserve_table_button {
+
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+}
+
+#booktabletext {
+  text-align: center; 
+  color: white; 
+  font-style: ralewaybold;
+  font-size: 40px;
+}
+
+#booktablediv {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 50%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding-bottom: 30px;
+}
+
+.logo {
+  width: 200px;
+  margin-left: 10px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.logo:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.foodpic {
+  width: 40%;
+  border: 2px solid black;
+}
+
+.slideshow {
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#omoss {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactfrom {
+  display: inline-block;
+  padding: 10px;
+  width: 40%;
+}
+
+.info {
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+}
+
+.hours {
+  width: 100%; 
+  background-color: #F3EFE9; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 5px 0px;
+}
+
+#frontpic {
+  width: 100%; 
+  margin-right: auto; 
+  margin-left: auto; 
+  display: block;
+}
+
+.bookingfrom {
+  width: 80%;
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
+#booktablebutton {
+  width: 50%; 
+  height: 50px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
+.menucategory {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.foodcat {
+
+  margin: auto;
+  width: 60%;
+}
+
+.pizzadiv {
+  display: flex;
+}
+
+.pizza {
+  flex: 1;
+  display: flex;
+}
+
+.pizza::after {
+  content: '';
+  border-bottom: 2px dotted;
+  flex: 1;
+  margin: 0 .5em;
+}
+
+#youtubevid {
+  width: 60%; 
+  height: 500px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  display: block;
+}
+
+#aboutpic {
+  width: 30%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block; 
+  margin-top: 3%; 
+  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+}
+
+.abouttext {
+  text-align: start; 
+  width: 40%; 
+  margin-right: 50px;
+}

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <meta charset="UTF-8"/>
-        <meta charset="description" content="Hemsida för Kajutan"/>
-        <meta charset="keywords" content="Kajutan, kajjan, Holmsund, pizza, kebab, hamburgare, restaurang"/>
-        <meta charset="author" content="Simon Lindgren"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hemsida för Kajutan">
+        <meta name="keywords" content="Kajutan, kajjan, Holmsund, pizza, kebab, hamburgare, restaurang">
+        <meta name="author" content="Simon Lindgren">
         <title>Kajutan.se – Restaurang Kajutan</title> 
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="printstyle.css" media="print">
         <link rel="shortcut icon" type="image/x-icon" href="https://usercontent.one/wp/www.kajjan.se/wp-content/uploads/2020/09/cropped-loggo-1-192x192.png">
     </head>   
     <body>
+        <!--Menubar-->
         <nav>
             <a href="index.html">
-                <img class="logo" src="bilder/Kajutan_logo.png" alt="Kajutan Logo"/>
+                <img class="logo" src="bilder/Kajutan_logo.png" alt="Kajutan Logo">
             </a>
             <!--Menu-->
             <ul>
@@ -25,18 +26,23 @@
             </ul>
         </nav>
 
-        <h1>Välkommen till <br/> KAJUTAN</h1>
+        <!--Header-->
+        <h1>Välkommen till <br> KAJUTAN</h1>
 
-        <div>
-            <div class="slideshow" style="margin-bottom: 40px;">
-                <img class="foodpic" src="bilder/kajutan.jpg">
+        <!--Body content-->
+        <div class="slideshow" style="margin-bottom: 40px; width: 90%; position: relative;">
+            <img src="bilder/matkajjan.jpg" alt="mat bild" id="frontpic">
+
+            <div id="booktablediv">
+                <p id="booktabletext">Boka bord på Kajutan</p>
+                    <button id="reserve_table_button" onclick="location.href='bokabord.html'">Boka bord</button>
             </div>
         </div>
 
-        <div class="slideshow" style="width: 80%; margin-bottom: 40px;">
-            <div class="hours" style="width: 100%; background-color: #F3EFE9; margin-left: auto; margin-right: auto; padding: 5px;">
-                <h1 style="margin-top: 30px;">Veckans Lunchmatsedel Vecka 6 <br/> 10:00 - 13:00</h1>
-                <table style="margin-left: auto; margin-right: auto;">
+        <div class="slideshow" style="margin-bottom: 40px; width: 90%;">
+            <div class="hours">
+                <h1 style="margin-top: 30px;">Veckans Lunchmatsedel Vecka 6 <br> 10:00 - 13:00</h1>
+                <table>
                     <tr>
                         <td class="lunchday">Måndag</td>
                         <td>Panerad fisk</td>
@@ -62,82 +68,71 @@
             </div>
         </div>
 
-        <div class="slideshow" style="width: 80%;">
-            <div class="hours" style="width: 100%; background-color: #F3EFE9; margin-left: auto; margin-right: auto; padding: 5px;">
+        <div class="slideshow" style="width: 90%;">
+            <div class="hours">
                 <h1 style="margin-top: 30px;">Öppettider</h1>
                 <p>Mån-Tors 10 - 20, Fre 10 - 23, Lör 12 - 23, Sön 12 - 20</p>
                 <p class="boldparagraphtext">Telefonnummer: 090 - 240 40</p>
             </div>
         </div>
 
-        <div id="reservetable">
-            <p style="margin-top: 70px; text-align: center;">Boka bord på Kajutan</p>
-            <a href="bokabord.html" style="text-decoration: none;">
-                <button id="reserve_table_button">Boka bord</button>
-            </a>
-        </div>
-
         <h1 style="margin-top: 70px;">Kajutan på Instagram</h1>
-        <div class="slideshow" style="width: 80%;">
+        <div class="slideshow" style="width: 90%;">
             <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
-                <img style="left: 0px; width: 24%; height: 24%; position: relative;" alt="bild 1" src="bilder/Kajjan1.png">
+                <img style="left: 0px; width: 24%; height: 24%; position: relative;" alt="bild 1" src="bilder/kajjan1.png">
                 <img style="left: 0px; width: 24%; height: 24%; position: relative;" alt="bild 2" src="bilder/kajjan2.png">
-                <img style="left: 0px; width: 24%; height: 24%; position: relative;" alt="bild 3" src="bilder/Kajjan3.png">
-                <img style="left: 0px; width: 24%; height: 24%; position: relative;" alt="bild 4" src="bilder/Kajjan4.png">
+                <img style="left: 0px; width: 24%; height: 24%; position: relative;" alt="bild 3" src="bilder/kajjan3.png">
+                <img style="left: 0px; width: 24%; height: 24%; position: relative;" alt="bild 4" src="bilder/kajjan4.png">
             </a>                                
         </div>
 
         <h1 style="margin-top: 70px;">Hitta oss</h1>
-        <div class="slideshow" style="width: 80%;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1767.183923698348!2d20.361168199999998!3d63.70944469999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467c57093ab26d6d%3A0x63bd2ba299ebe24d!2sKajutan!5e0!3m2!1ssv!2sse!4v1706901571342!5m2!1ssv!2sse" width="100%" height="450" style="border:2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="slideshow" style="width: 90%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1767.183923698348!2d20.361168199999998!3d63.70944469999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467c57093ab26d6d%3A0x63bd2ba299ebe24d!2sKajutan!5e0!3m2!1ssv!2sse!4v1706901571342!5m2!1ssv!2sse" style="width: 100%; height: 500px; border:2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <!--Java update
-        <div class="scrollupdiv">
-            <img src="bilder/scrollup.png" class="scrollupimg"/>
-        </div>-->
+        <!--Footer-->
+        <footer>
+            <div class="fot">
+                <div class="firsttextfot">
+                    <p class="footertextheader">Kontakta oss</p>
+                    <p class="footertext">kajjan@gmail.com</p>
+                    <p class="footertext">Tel: 090-24040</p>
+                    <p class="footertext">Gamla Storgatan 47 
+                        <a id="footermaplink" href="https://www.google.com/maps/place/Kajutan/@63.7094471,20.3585933,17z/data=!3m1!4b1!4m6!3m5!1s0x467c57093ab26d6d:0x63bd2ba299ebe24d!8m2!3d63.7094447!4d20.3611682!16s%2Fg%2F1tcw6thf?entry=ttu" target="_blank">
+                            (tryck för karta)
+                        </a>
+                    </p>
+                    <div>
+                        <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
+                            <img src="bilder/instagram.png" alt="instagram logo" class="instagramlogo">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100054215632458" target="_blank">
+                            <img src="bilder/facebook.png" alt="facebook logo" class="facebooklogo">
+                        </a>
+                    </div>
+                </div>
 
-    </body>
+                <div class="textfot">
+                    <p class="footertextheader">Hitta snabbt </p>
 
-    <footer>
-        <div class="fot">
-            <div class="firsttextfot">
-                <p class="footertextheader">Kontakta oss</p>
-                <p class="footertext">kajjan@gmail.com</p>
-                <p class="footertext">Tel: 090-24040</p>
-                <p class="footertext">Gamla Storgatan 47 
-                    <a id="footermaplink" href="https://www.google.com/maps/place/Kajutan/@63.7094471,20.3585933,17z/data=!3m1!4b1!4m6!3m5!1s0x467c57093ab26d6d:0x63bd2ba299ebe24d!8m2!3d63.7094447!4d20.3611682!16s%2Fg%2F1tcw6thf?entry=ttu" target="_blank">
-                        (tryck för karta)
-                    </a>
-                </p>
-                <div>
-                    <a href="https://www.instagram.com/kajutan_i_holmsund/?igshid=fykxnc2uqkss&fbclid=IwAR1zCch6kVrFypU6_AxIjfgXE67RLH0PxYlkXdYhy6pjkPZQ3cYFseP2J5E" target="_blank">
-                        <img src="bilder/instagram.png" class="instagramlogo"/>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100054215632458" target="_blank">
-                        <img src="bilder/facebook.png" class="facebooklogo"/>
-                    </a>
+                    <p> 
+                        <a href="index.html" class="footerlinks">Hem</a><br> 
+                        <a href="meny.html" class="footerlinks">Meny</a><br>
+                        <a href="bokabord.html" class="footerlinks">Boka bord</a><br>
+                        <a href="om.html" class="footerlinks">Om oss</a><br>
+                        <a href="kontakt.html" class="footerlinks">Kontakta oss</a>
+                    </p>  
+                </div>
+                
+                <div class="textfot" >
+                    <p class="footertextheader">Öppettider</p>
+                    <p class="footertext">Mån-Tors 10:00 - 20:00</p>
+                    <p class="footertext">Fre 10:00 - 23:00</p>
+                    <p class="footertext">Lör 12:00 - 23:00</p>
+                    <p class="footertext">Sön 12:00 - 20:00</p>
                 </div>
             </div>
-
-            <div class="textfot">
-                <p class="footertextheader">Hitta snabbt </p>
-
-                <p> 
-                    <a href="index.html" class="footerlinks">Hem</a></br> 
-                    <a href="meny.html" class="footerlinks">Meny</a></br>
-                    <a href="bokabord.html" class="footerlinks">Boka bord</a></br>
-                    <a href="om.html" class="footerlinks">Om oss</a></br>
-                    <a href="kontakt.html" class="footerlinks">Kontakta oss</a>
-                </p>  
-            </div>
-            
-            <div class="textfot" >
-                <p class="footertextheader">Öppettider</p>
-                <p class="footertext">Mån-Tors 10:00 - 20:00</p>
-                <p class="footertext">Fre 10:00 - 23:00</p>
-                <p class="footertext">Lör 12:00 - 23:00</p>
-                <p class="footertext">Sön 12:00 - 20:00</p>
-            </div>
-    </footer>
+        </footer>
+    </body>
 </html>
