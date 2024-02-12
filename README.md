@@ -1,6 +1,6 @@
 # Kajutan
 Kajutan new website. Webbteknik assignment
 
-Link: [New Kajutan](https://people.cs.umu.se/~dv21sln/kajjan/){:target="_blank" rel="noopener"}
+Link: <a href="https://people.cs.umu.se/~dv21sln/kajjan/" target="_blank">New Kajutan</a>
 
 ![Kajutan](kajjan.png)
