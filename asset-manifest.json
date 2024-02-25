@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Kajutan/static/css/main.1300bbc2.css",
+    "main.js": "/Kajutan/static/js/main.caa061a6.js",
+    "static/js/453.9ca12d9b.chunk.js": "/Kajutan/static/js/453.9ca12d9b.chunk.js",
+    "static/media/kajjan1.png": "/Kajutan/static/media/kajjan1.41db0741b3c7b8392527.png",
+    "static/media/kajjan3.png": "/Kajutan/static/media/kajjan3.98e2473847523db6c6ac.png",
+    "static/media/kajjan2.png": "/Kajutan/static/media/kajjan2.8701db594faccc11d9bd.png",
+    "static/media/kajjan4.png": "/Kajutan/static/media/kajjan4.96955f1e9ef0c080c7e8.png",
+    "static/media/Kajutan_logo.png": "/Kajutan/static/media/Kajutan_logo.5664af48f8ab52df66c0.png",
+    "static/media/Raleway-VariableFont_wght.ttf": "/Kajutan/static/media/Raleway-VariableFont_wght.e14d84ccec6be3ff19e3.ttf",
+    "static/media/instagram.png": "/Kajutan/static/media/instagram.ab4ed819b99201717e16.png",
+    "static/media/Raleway-SemiBold.ttf": "/Kajutan/static/media/Raleway-SemiBold.9a6a9af38bf678bce031.ttf",
+    "static/media/matkajjan.jpg": "/Kajutan/static/media/matkajjan.a6ac09bf779fb796c6a1.jpg",
+    "static/media/Ovo-Regular.ttf": "/Kajutan/static/media/Ovo-Regular.4b6eafae326cdd7098de.ttf",
+    "index.html": "/Kajutan/index.html",
+    "main.1300bbc2.css.map": "/Kajutan/static/css/main.1300bbc2.css.map",
+    "main.caa061a6.js.map": "/Kajutan/static/js/main.caa061a6.js.map",
+    "453.9ca12d9b.chunk.js.map": "/Kajutan/static/js/453.9ca12d9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1300bbc2.css",
+    "static/js/main.caa061a6.js"
+  ]
+}
