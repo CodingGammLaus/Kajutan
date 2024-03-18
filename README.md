@@ -1,5 +1,5 @@
 # Kajutan
-Kajutan new website. Webbteknik assignment
+Kajutan new website. Webbteknik assignment (Made by Simon Lindgren)
 
 Link to React: <a href="https://codinggammlaus.github.io/kajutan-react" target="_blank">New Kajutan</a>
 
