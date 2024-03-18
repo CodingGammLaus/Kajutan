@@ -1,0 +1,445 @@
+/*Import font Ovo*/
+@font-face {
+  font-family: ovo;
+  src: url(fonts/Ovo-Regular.ttf);
+}
+
+/*Import font Raleway*/
+@font-face {
+  font-family: raleway;
+  src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: ralewaybold;
+  src: url(fonts/Raleway-SemiBold.ttf);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #F4F4F4;
+  margin: 0 0 100px;
+  padding-bottom: 50px;
+}
+
+/*Header 1*/
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 42px;
+  font-family: ovo;
+  margin-top: 50px;
+}
+
+/*Header 2*/
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: ovo;
+}
+
+/*Header 3*/
+h3 {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-family: ovo;
+}
+
+hr {
+  border-bottom: 2px solid black;
+  width: 15%;
+}
+
+/*Body text*/
+p, td {
+  color: black;
+  font-size: 20px;
+  font-family: raleway;
+}
+
+td {
+  padding-bottom: 18px;
+  text-align: start;
+}
+
+table {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+audio {
+  background-color: rgba(0, 0, 0, 0.3); 
+  padding: 2px; 
+  border-radius: 50px;
+}
+
+
+/*---------------------------------------Footer------------------------------------------------*/
+
+footer {
+  background-color: #3B3939;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 190px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fot {
+  display: flex;
+  margin-left: 10px;
+}
+
+.firsttextfot {
+  font-size: 18px;
+  color: white;
+  width: 40%;
+}
+
+.textfot {
+  margin-left: 15%;
+  width: 25%;
+}
+
+.footertext {
+  color: white; 
+  font-family: raleway;
+  font-size: 18px;
+  margin-top: 5px; 
+  margin-bottom: 5px;
+}
+
+.footertextheader {
+  font-family: ralewaybold;
+  color: white; 
+  font-size: 18px;
+}
+
+.footerlinks {
+  text-decoration: none; 
+  font-family: raleway;
+  color: white; 
+  font-size: 18px;
+}
+
+#footermaplink {
+  color: lightblue;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------Menu----------------------------------------*/
+nav {
+  background-color: #3B3939;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: auto;
+  display: flex;
+  margin-right: 40px;
+}
+
+u li {
+  margin-left: 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  transition: 0.3s;
+  font-family: raleway;
+}
+
+a:hover {
+  color: #d8d8d8;
+}
+
+.active {
+  color: #77C6FF;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------Form-------------------------------*/
+form {
+  width: 70%;
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit], #reserve_table_button,  #booktablebutton, .custombutton {
+  background-color: #AFA08D;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: raleway;
+  font-size: 24px;
+}
+
+input[type=submit]:hover, #reserve_table_button:hover,  #booktablebutton, .custombutton:hover{
+  background-color: #998d7c;
+}
+
+#booktablebutton:disabled {
+
+  background-color: #767066; 
+}
+
+#booktablebutton:enabled {
+
+  background-color: #AFA08D; 
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+/*------------------------------------------------------------------*/
+
+
+/*-------------------------Id's and Classes-----------------------------------------*/
+
+.audio-container {
+  margin-top: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+}
+
+.instagramlogo {
+  margin-top: 5px;
+  width: 30px; 
+  margin-right: 10px;
+}
+
+.boldparagraphtext {
+  font-family: ralewaybold;
+  font-size: 22px;
+}
+
+.facebooklogo {
+  margin-top: 5px;
+  width: 30px;
+}
+
+.lunchday {
+  font-family: ralewaybold; 
+  padding-right: 80px;
+}
+
+#reserve_table_button {
+
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+}
+
+#booktabletext {
+  text-align: center; 
+  color: white; 
+  font-style: ralewaybold;
+  font-size: 40px;
+}
+
+#booktablediv {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 50%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding-bottom: 30px;
+}
+
+.logo {
+  width: 200px;
+  margin-left: 10px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.logo:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.foodpic {
+  width: 40%;
+  border: 2px solid black;
+}
+
+.slideshow {
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#omoss {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactfrom {
+  display: inline-block;
+  padding: 10px;
+  width: 40%;
+}
+
+.info {
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+}
+
+.hours {
+  width: 100%; 
+  background-color: #F3EFE9; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 5px 0px;
+}
+
+#frontpic {
+  width: 100%; 
+  margin-right: auto; 
+  margin-left: auto; 
+  display: block;
+}
+
+.bookingfrom {
+  width: 80%;
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
+#booktablebutton {
+  width: 50%; 
+  height: 50px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
+.menucategory {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.foodcat {
+
+  margin: auto;
+  width: 60%;
+}
+
+.pizzadiv {
+  display: flex;
+}
+
+.pizza {
+  flex: 1;
+  display: flex;
+}
+
+.pizza::after {
+  content: '';
+  border-bottom: 2px dotted;
+  flex: 1;
+  margin: 0 .5em;
+}
+
+#youtubevid {
+  width: 60%; 
+  height: 500px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  display: block;
+}
+
+#aboutpic {
+  width: 30%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block; 
+  margin-top: 3%; 
+  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+}
+
+.abouttext {
+  text-align: start; 
+  width: 40%; 
+  margin-right: 50px;
+}
+
+.polaroid {
+  float: left;
+  width: 24%;
+  margin-bottom: 70px;
+  margin-right: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  text-align: center;
+  padding: 2px 5px;
+}
