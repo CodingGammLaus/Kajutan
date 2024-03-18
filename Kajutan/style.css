@@ -214,7 +214,7 @@ input[type=submit], #reserve_table_button {
   font-size: 24px;
 }
 
-input[type=submit]:hover, #reserve_table_button:hover{
+input[type=submit]:hover, #reserve_table_button:hover {
   background-color: #998d7c;
 }
 
@@ -250,6 +250,7 @@ textarea {
 
 .boldparagraphtext {
   font-family: ralewaybold;
+  font-size: 22px;
 }
 
 .facebooklogo {
@@ -417,4 +418,18 @@ textarea {
   text-align: start; 
   width: 40%; 
   margin-right: 50px;
+}
+
+.polaroid {
+  float: left;
+  width: 24%;
+  margin-bottom: 70px;
+  margin-right: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  text-align: center;
+  padding: 2px 5px;
 }

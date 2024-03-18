@@ -7,8 +7,9 @@
         <meta name="author" content="Simon Lindgren">
         <title>Kajutan.se – Restaurang Kajutan</title> 
         <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="newstyles.css" type="text/css">
         <link rel="stylesheet" href="printstyle.css" media="print">
-        <link rel="shortcut icon" type="image/x-icon" href="https://usercontent.one/wp/www.kajjan.se/wp-content/uploads/2020/09/cropped-loggo-1-192x192.png">
+        <link rel="shortcut icon" type="image/x-icon" href="https://usercontent.one/wp/www.kajjan.se/wp-content/uploads/2020/09/cropped-loggo-1-192x192.png"> 
     </head>   
     <body>
         <!--MenuBar-->
@@ -37,41 +38,59 @@
                 <p class="pizza">1. Margerita</p>
                 <p>99 kr</p>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">2. Vesuvio</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Skinka', 0, 'vesuvio')">2. Vesuvio</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">3. Truino</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Räkor', 1, 'turino')">3. Truino</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">4. Capricciosa</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Skinka, Champinjoner', 2, 'capricciosa')">4. Capricciosa</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">5. Hawaii</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Skinka, Annanas', 3, 'hawaii')">5. Hawaii</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">6. Altano</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Tonfisk, Rödlök', 4, 'altano')">6. Altano</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">7. Disco</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Köttfärs, Vitlök', 5, 'disco')">7. Disco</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">8. Cacciatore</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Salami, Paprika, Oliver', 6, 'cacciatore')">8. Cacciatore</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">9. Romana</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Bacon, Rödlök', 7, 'romana')">9. Romana</p>
+                    <p>109 kr</p>
+                </div>
             </div>
-            <div class="pizzadiv">
-                <p class="pizza">10. Bolognese</p>
-                <p>109 kr</p>
+            <div class="showmore">
+                <div class="pizzadiv">
+                    <p class="pizza" onclick="vesuvio('Köttfärs, Skivade tomater, Rödlök', 8, 'bolognese')">10. Bolognese</p>
+                    <p>109 kr</p>
+                </div>
             </div>
             <div class="pizzadiv">
                 <p class="pizza">11. Napolitana</p>
@@ -295,5 +314,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

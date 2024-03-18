@@ -58,12 +58,21 @@
                 </div>
             </div>
             <div class="contactfrom">
-                <form>
+                <form name="send_form" onsubmit="return validateContact()">
                     <p class="menucategory">Skicka meddelande</p>
-                    <input id="name" type="text" placeholder="Namn">
-                    <input id="email" type="email" placeholder="Email">
-                    <textarea id="comment" name="comment" placeholder="Meddelande"></textarea>
-                    <input id="send" type="submit" value="Skicka" onclick="alert('Skickat! (Validering läggs till i JavaScript uppdateringen)')">
+
+                    <p style="text-align: start; margin-bottom: 0px; margin-top: 0px;">Namn *</p>
+                    <input type="text" name="fname">
+                    <p id="check_name" style="color: red; font-size: 12px;"></p>
+                    
+                    <p style="text-align: start; margin-bottom: 0px; margin-top: 0px;">Email *</p>
+                    <input type="email" name="email">
+                    <p id="check_email" style="color: red; font-size: 12px;"></p>
+                    
+                    <p id="max_char" style="text-align: start; margin-bottom: 0px; margin-top: 0px;">Meddelande (200 tecken)</p>
+                    <textarea name="comment" onkeyup="maxchar()" maxlength="200"></textarea>
+                    
+                    <input name="send" type="submit" value="Skicka">
                 </form>
             </div>
         </div>
@@ -110,6 +119,7 @@
                     <p class="footertext">Sön 12:00 - 20:00</p>
                 </div>
             </div>
-        </footer>
+        </footer> 
+        <script src="script.js"></script>
     </body>
 </html>

@@ -33,16 +33,28 @@
 
         <!--Body content-->
         <div class="slideshow">
-            <form style="margin: auto;">
+            <form  name="send_form" style="margin: auto;" onsubmit="return validateBooking()">
                 <p class="menucategory">Boka bord på Kajutan</p>
-                <input id="name" type="text" placeholder="Namn">
+                
+                <p style="text-align: start; margin-bottom: 0px;">Namn *</p>
+                <input name="fname" type="text">
+                <p id="check_name" style="color: red; font-size: 12px;"></p>
+                
+                <p style="text-align: start; margin-bottom: 0px; margin-top: 0px;">Telefonnummer & Antal personer *</p>
                 <div style="display: flex;">
-                    <input id="number" type="tel" placeholder="Telefonnummer" style="margin-right: 2%;">
-                    <input id="persons" type="number" placeholder="Antal personer" style="width: 30%;">
+                    <input name="number" type="tel" style="margin-right: 2%;">
+                    <input name="persons" type="number" max="20" min="1" placeholder="Antal personer (max 20)" style="width: 30%;">
                 </div>
-                <input id="date" type="datetime-local" style="resize: none;">
-                <textarea id="comment" name="comment" placeholder="Meddelande restaurangen något i förväg"></textarea>
-                <input id="booktablebutton" type="submit" value="Boka" onclick="alert('Bokat! (Validering läggs till i JavaScript uppdateringen)')">
+                <p id="check_number" style="color: red; font-size: 12px;"></p>
+                
+                <p style="text-align: start; margin-bottom: 0px; margin-top: 0px;">Datum och tid *</p>
+                <input name="bookdate" type="datetime-local" style="resize: none;">
+                <p id="check_date" style="color: red; font-size: 12px;"></p>
+                
+                <p id="max_char" style="text-align: start; margin-bottom: 0px; margin-top: 0px;">Meddelande (200 tecken)</p>
+                <textarea name="comment" onkeyup="maxchar()" maxlength="200"></textarea>
+                
+                <input id="booktablebutton" type="submit" value="Boka">
             </form>
         </div>
 
@@ -89,5 +101,10 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script> 
+        <script>
+            var today = new Date().toISOString().slice(0, 16);
+            document.getElementsByName("bookdate")[0].min = today;
+        </script>
     </body>
 </html>
